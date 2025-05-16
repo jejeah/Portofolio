@@ -1,42 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-</head>
-<body>
-    <h1>Materi HTML</h1>
-    <a href="#atribut">HTML Atribut</a><br>
-    <a href="#heading">HTML Heading</a><br>
-    <a href="#paragraphs">HTML paragraphs</a><br>
-    <a href="#formatting">HTML formatting</a><br>
-    <a href="#qualitions">HTML qualitions</a><br>
-    <a href="#comments">HTML comments</a><br>
-    <a href="#color">HTML color</a><br>
-    <a href="#tables">HTML tables</a><br>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="icon" type="image/png" href="images/Profile.jpg" />
+		<title>Blog</title>
+	</head>
+	<body>
+		<header>
+			<h1 style="color: white">Materi HTML</h1>
+			<nav>
+				<td>
+					<a href="index.html">Home</a>
+				</td>
+				<table>
+					<tr>
+						<td><a href="#atribut">Atribut</a></td>
+						<td><a href="#heading">Heading</a></td>
+						<td><a href="#paragrahps">Paragrahps</a></td>
+						<td><a href="#style">Style</a></td>
+						<td><a href="#formatting">Formatting</a></td>
+						<td><a href="#quotations">Quotations</a></td>
+						<td><a href="#color">Color</a></td>
+						<td><a href="#link">Link</a></td>
+						<td><a href="#images">Images</a></td>
+						<td><a href="#favicon">Favicon</a></td>
+						<td><a href="#tables">Tables</a></td>
+					</tr>
+				</table>
+			</nav>
+		</header>
 
+		<hr />
 
-    <section id="atribut"> 
-<h2>Atribut HTML</h2>
-<p>1. Atribut a href (link):
-    &lt;a href="pnb.ac.id"&gt;Web PNB&lt;/a&gt;
-    menjadi link seperti ini: <a href="pnb.ac.id">PNB</a>
-</p>
-<p>2. Atribut img src (menampilkan gambar):
-   tambahkan terlebih dahulu gambar yang akan digunakan pada folder HTML
-    &lt;img src="namagambar.jpg"&gt;
-    tampil seperti ini: <br>
-    <img src="poto/2.png" alt="foto profile" width="150" height="150">
-</p>
-<p>3. The style Attribute <br>
-     &lt;p style="color:red;"&gt;Hello world&lt;/a&gt;
-     tampil seperti ini <p style="color:blueviolet">Jesaya!</p>
- </p>
-    </section>
+		<section id="Atribut">
+			<h2>Atribut</h2>
+			<p>
+				1. Atribut a href (link):&lt;a href="pnb.ac.id"&gt;Web PNB&lt;menjadi
+				seperti ini: <a href="https://pnb.ac.id">PNB</a>
+			</p>
 
-    <section id="heading">
+			<p>
+				2. Atribut img src (Menampilkan gambar): tambahkan terlebih dahulu
+				gambar yang akan digunakan pada folder Portofolio &lt;img
+				src="gambar.png"&gt;<br /><img
+					src="images/Profile.jpg"
+					width="200px"
+					height="200px"
+					alt="Logo PNB"
+				/>
+			</p>
 
-    </section>
-</body>
+			<p style="color: purple">
+				3. Atribut Style<br />
+				&lt; p style="color: red&gt; This is a red paragrahp.&gt;Tulisan
+				menjadi:
+			</p>
+			<p style="color: purple">Tulisan akan berubah warna menjadi Ungu</p>
+			<br />
+			<hr />
+		</section>
+
+		<section id="heading">
+			<h2>Heading</h2>
+			<h1>Ini heading 1</h1>
+			<h2>Ini heading 2</h2>
+			<h3>Ini heading 3</h3>
+			<h4>Ini heading 4</h4>
+			<h5>Ini heading 5</h5>
+			<h6>Ini heading 6</h6>
+			<br />
+
+			<hr />
+		</section>
+
+		<section id="paragrahps">
+			<h2>Paragraf</h2>
+			<p>Ini adalah paragraf normal</p>
+
+			<!-- <hr> -->
+			<p>Ini paragraf menggunakan Horizontal Rules</p>
+			<hr />
+
+			<p>
+				Paragraf ini menggunakan <br />
+				Break <br />
+				elemen
+			</p>
+			<p>Ini paragraf dengan pre element</p>
+			<pre>
+            Ini pre element
+            <p>Ini adalah paragraf yang ada di dalam pre element</p>
+        </pre>
+			<br />
+			<hr />
+		</section>
+
+		<section id="style">
+			<h2>Style</h2>
+			<p style="color: blue">
+				Ini paragraf dengan style Color untuk mengubah font menjadi berwarna
+			</p>
+			<p style="font-size: 25px">
+				Ini paragraf dengan style font-size untuk mengubah ukuran font
+			</p>
+			<p style="font-family: 'Times New Roman', Times, serif">
+				Ini paragraf dengan style Font-family untuk mengubah tema font
+			</p>
+			<p style="text-align: center">
+				Ini paragraf dengan style text-align untuk mengubah posisi teks ke
+				tengah
+			</p>
+			<br />
+			<hr />
+		</section>
+
+		<section id="formatting">
+			<h2>Formatting</h2>
+			<b>ini menggunakan tag Bold</b><br />
+			<strong>ini menggunakan menggunakan tag strong</strong><br />
+			<i>ini menggunakan tag i</i><br />
+			<em>in menggunakan tag em</em><br />
+			<mark>ini menggunakan tag mark</mark><br />
+			<small>ini menggunakan tag small</small><br />
+			<p><del>ini menggunakan tag del</del></p>
+			<br />
+			<p><sub>ini menggunakan tag sub</sub></p>
+			<br />
+			<p><sup>ini menggunakan tag sup</sup></p>
+			<br />
+			<hr />
+		</section>
+
+		<section id="quotations">
+			<h2>Quotations</h2>
+			<p>Ini adalah blackquote:</p>
+			<blockquote>
+				Success is the ability to go from one failure to another with no loss of
+				enthusiasm.
+				<footer>— Winston Churchill</footer>
+			</blockquote>
+			<br />
+			<p>
+				Albert Einstein pernah berkata,
+				<q>Imagination is more important than knowledge.</q>
+			</p>
+		</section>
+
+		<section id="color">
+			<h2>Color</h2>
+			<p style="color: red">Ini adalah teks berwarna merah</p>
+			<p style="color: green">Ini adalah teks berwarna hijau</p>
+		</section>
+
+		<section id="links">
+			<h2>Links</h2>
+			<p>Ini adalah link ke <a href="https://pnb.ac.id">Web PNB</a></p>
+			<p>Ini adalah link ke <a href="https://www.google.com">Google</a></p>
+			<p>Ini adalah link ke <a href="https://www.youtube.com">Youtube</a></p>
+			<p>Ini adalah link ke <a href="https://www.facebook.com">Facebook</a></p>
+			<p>
+				Ini adalah link ke <a href="https://www.instagram.com">Instagram</a>
+			</p>
+		</section>
+
+		<section id="images">
+			<h2>Images</h2>
+			<p>Ini adalah gambar</p>
+			<img
+				src="images/Profile.jpg"
+				alt="Logo PNB"
+				width="200px"
+				height="200px"
+			/><br />
+		</section>
+
+		<section id="favicon">
+			<h2>Favicon</h2>
+			<p>Ini adalah favicon</p>
+			&lt;link rel="icon" type="image/png" href="favicon.png"&gt; dengan kode
+			tersebut, logo yang awal nya adalah bola dunia akan berubah menjadi logo
+			atau gambar yang kita inginkan<br />
+		</section>
+
+		<section id="tables">
+			<h2>Tables</h2>
+			<p>Ini adalah tabel</p>
+			<table border="1" cellpadding="10" cellspacing="0">
+				<tr>
+					<th>Nama</th>
+					<th>Umur</th>
+					<th>Kota</th>
+				</tr>
+				<tr>
+					<td>Andi</td>
+					<td>20</td>
+					<td>Jakarta</td>
+				</tr>
+				<tr>
+					<td>Budi</td>
+					<td>25</td>
+					<td>Bandung</td>
+				</tr>
+				<tr>
+					<td>Cindy</td>
+					<td>30</td>
+					<td>Surabaya</td>
+				</tr>
+			</table>
+		</section>
+	</body>
 </html>
